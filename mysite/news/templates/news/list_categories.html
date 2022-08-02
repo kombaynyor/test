@@ -1,0 +1,8 @@
+<div class="list-group">
+    <!-- переменной categories присваиваем значение тега get_category(get_list_category), которую
+     описали templatetags/news_tags.py -->
+    {% for item in categories %}
+    <a href="{{ item.get_absolute_url }}" class="list-group-item list-group-item-action">{{item.title}}</a>
+    {% endfor %}
+
+</div>
