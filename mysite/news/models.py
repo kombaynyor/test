@@ -15,6 +15,7 @@ class News(models.Model):
     is_published = models.BooleanField(default=True, verbose_name='Опубликовано')
     # Если основная модель объявлена ниже то вот так, если выше то без скобочек
     category = models.ForeignKey('Category', on_delete=models.PROTECT,verbose_name='Категория')
+    view = models.IntegerField(default=0)
 
     def get_absolute_url(self):
         return reverse('view_news', kwargs={"pk": self.pk})
