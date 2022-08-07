@@ -1,0 +1,9 @@
+#header {
+    background: #00bcd4;
+}
+#branding h1, #branding h1 a:link, branding h1 a:visited{
+   color: #fff;
+}
+div.breadcrumbs{
+    background: #263238;
+}

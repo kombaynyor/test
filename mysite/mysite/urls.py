@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # если обращаемся просто по адресу перекидывает на обработку нужным нам приложением
     path('', include('news.urls')),
+    path('ckeditor/', include('ckeditor_uploader.urls')),
 
 ]
 if settings.DEBUG:
